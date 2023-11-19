@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon website</title>
+    <style>
+        header {
+            background-color: #3f1c49;
+            color: #fcf8f8;
+            padding: 10px;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 2;
+            margin: 0;
+            text-align: right;
+        }
+
+        header li {
+            display: inline;
+            margin-right: 25px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #f3eeee;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            justify-content: space-between;
+        }
+
+        .img {
+            width: 100%;
+            height: auto;
+        }
+
+        .img img {
+            width: 220px;
+            height: 190px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .box {
+            width: 400px;
+            height: 0px;
+            background-color: #f4f4f4;
+            border: 2px solid #ececec;
+            margin: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background: linear-gradient(to bottom right, rgb(239, 142, 73), rgb(246, 231, 131)); */
+            background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/PC_HERO_NTA_Up-to-20_2X_EN._CB576676677_.jpg);
+        }
+
+        .topnav {
+            background-color: #232f3e;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 10px;
+        }
+
+        .topnav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search input {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 500px;
+        }
+
+        select {
+
+            background-color: white;
+            color: black;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .search button {
+            background-color: #f0c14b;
+            border: none;
+            color: #111;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button {
+            border-radius: 5px;
+        }
+
+        .nav-items {
+            margin-left: auto;
+        }
+
+        .cards .card p {
+            padding: 0 15px;
+            margin-top: 5px;
+        }
+
+        #blog {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .blog-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .blog-heading h1 {
+            color: #581b1b;
+        }
+
+        .blog-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            flex-wrap: wrap;
+        }
+
+        .blog-box {
+            width: 280px;
+            background-color: #f6f1f3;
+            border: 15px solid #f7f5f5;
+            margin: 20px;
+        }
+
+        .blog-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .blog-text a {
+            color: rgb(107, 42, 148);
+        }
+
+        .blog-text a:hover {
+            color: #f33c3c;
+            transition: all ease 0.3s;
+        }
+
+        .aside {
+            width: 45%;
+            float: left;
+            background-color: #fa8108;
+            color: rgb(11, 11, 11);
+            padding: 0;
+        }
+
+        aside button {
+            background-color: #fcc83a;
+            font-size: 20px;
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        aside button:hover {
+            background-color: #FF7F00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <div class="logo">
+            <a href="https://www.amazon.in/">Great Indian Festival</a>
+        </div>
+        <p>Your Lists
+            <select name="card_type" id="card type" required placeholder="Search...">
+
+                <option value=""> Wishlists</option>
+                <option value="">Create a wishlist</option>
+                <option value="">Discover your style</option>
+                <option value="">Baby wishlist</option>
+                <option value="">Explore showroom</option>
+            </select>
+        </p>
+
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <header>
+        <img src="https://www.thesun.co.uk/wp-content/uploads/2022/02/Amazon-Logo-1024x426-1.png" alt=" Logo"
+            height="50" width="150">
+        <nav>
+            <ul>
+                <li><a href="#">Today's Deals</a> </li>
+                <li> <a href="#">Best sellers</a></li>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Registry</a></li>
+                </li>
+            </ul>
+            <div class="nav-items">
+            </div>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Become a seller on Amazon</h2>
+        <h3>Sell to crores of customers with 50% off on Selling Fee* on Amazon.in </h3>
+        <h3>Put your products in front of more than 300 million customers worldwide</h3>
+        <button> Start selling</button>
+    </aside>
+
+    <pre><p>
+
+
+  </p></pre>
+
+    <!--blog-container---->
+    <div class="blog-container">
+        <div class="blog-box">
+            <h3>Starting ₹199 | Shoes & handbags</h3>
+            <div class="blog-img">
+                <img src="shoes.png" />
+            </div>
+            <div class="blog-text">
+                <span> see all offers</span>
+            </div>
+        </div>
+
+        <!-- box-2- -->
+        <div class="blog-box">
+            <h3> Great offers on wide range of TVs for every room</h3>
+            <div class="blog-img">
+                <img src="Tv.png" />
+            </div>
+            <div class="blog-text">
+                <span> see all offers</span>
+            </div>
+        </div>
+
+        <!-- box-3- -->
+        <div class="blog-box">
+            <h3> Starting ₹349 | Bestselling headphones grab this deal</h3>
+            <div class="blog-img">
+                <img src="earphone.png" />
+            </div>
+            <div class="blog-text">
+                <span> see all offers</span>
+            </div>
+        </div>
+
+        <!-- box-4- -->
+        <div class="blog-box">
+            <h3>Up to 80% off | Laptops, smartwatches & headphones</h3>
+            <div class="blog-img">
+                <img src="smart tv.png" />
+            </div>
+            <div class="blog-text">
+                <span> see all offers</span>
+            </div>
+        </div>
+
+        <!-- box-5- -->
+        <div class="blog-box">
+            <h3> Up to 40% off | Smartphones that suit your budget</h3>
+            <div class="blog-img">
+                <img src="mobile.png" />
+            </div>
+            <div class="blog-text">
+                <span> see all offers</span>
+            </div>
+        </div>
+
+        <!-- box-6- -->
+        <div class="blog-box">
+            <h3> Up to 60% off | Top offers on home appliances</h3>
+            <div class="blog-img">
+                <img src="home appliances.png" />
+            </div>
+            <div class="blog-text">
+                <span> see all offers</span>
+            </div>
+        </div>
+
+
+        <!-- box-7- -->
+        <div class="blog-box">
+            <h3> Great Indian Festival | Shop all deals | Hurry up grab this deal</h3>
+            <div class="blog-img">
+                <img src="offprice.png" />
+            </div>
+            <div class="blog-text">
+                <span> see all offers</span>
+            </div>
+        </div>
+
+        <!-- box-8- -->
+        <div class="blog-box">
+            <h3> Minimum 50% off | Restyle your home</h3>
+            <div class="blog-img">
+                <img src="restyle.png" />
+            </div>
+            <div class="blog-text">
+                <span> see all offers</span>
+            </div>
+        </div>
+    </div>
+
+    <img src="banner.png" width="1470">
+
+</body>
+
+</html>

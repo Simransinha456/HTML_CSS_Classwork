@@ -1,0 +1,310 @@
+<!-- Your task is to Create a blog post page that adheres to modern HTML5 standards. The page should be structured using semantic HTML5 elements, including <header> , <nav> , 
+    <main>, <article> , <aside> , <footer> and any other relevant tags. You are provided with the content of a sample blog post, and your  -->
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>My blog post</title>
+            <style>
+                * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        
+        }
+        
+        header {
+            background-color: #2c2b2b;
+            color: #fff;
+            padding: 5px;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        
+        }
+        
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        
+        
+        #blog {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .blog-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .blog-heading h1 {
+            color: #f4f3f3;
+        }
+        
+        .blog-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            flex-wrap: wrap;
+        
+        }
+        
+        .blog-box {
+            width: 350px;
+            background-color: #c29baf;
+            border: 1px solid #ececec;
+            margin: 20px;
+            padding: 8px;
+        }
+        
+        .blog-img {
+            width: 100%;
+            height: auto;
+        
+        }
+        
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .blog-text span{
+            padding: 10px;
+            margin-left: 50px;
+         
+        }
+        .blog-text h2{
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .blog-text a {
+            color: rgb(107, 42, 148);
+        }
+        
+        .blog-text a:hover {
+            color: #f33c3c;
+            transition: all ease 0.3s;
+        }
+        aside img{
+            padding:10px;
+        }
+        
+        
+        @media(max-width:600px) {
+            .blog-box {
+                width: 300px;
+            }
+        }
+        article {
+            width: 65%;
+            float: left;
+            padding: 30px;
+        }
+        
+        aside {
+            width: 35%;
+            float: left;
+            background-color: #c29baf;
+            color: rgb(11, 11, 11);
+            padding: 20px;
+        
+        }
+        
+        footer {
+            background-color: #dfadad;
+            color: #0b0b0b;
+            padding: 20px 0;
+            text-align: center;
+        }
+            </style>
+        
+        
+        
+        </head>
+        
+        <body>
+            <main>
+                <header>
+                    <!-- Heading---------- -->
+                    <section id="blog">
+        
+                        <div class="blog-heading">
+                            <h1>My Blog Post Page</h1>
+                            <br>
+        
+                            <nav>
+                                <ul>
+                                    <li><a href="/Home">Home</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                </header>
+                </div>
+                </section>
+        
+        
+                <!--blog-container---->
+                <div class="blog-container">
+                    <!-- box-1- -->
+                    <div class="blog-box">
+                        <!--img---->
+                        <div class="blog-img">
+                            <img src="https://mcprod.eroma.com.au/media/catalog/product/t/u/tulip.jpeg?auto=webp&format=pjpg" />
+                        </div>
+        
+                        <div class="blog-text">
+                            <span> 13 sept 2023 / Web Design</span>
+                            <br>
+                            <br>
+                            <h2> Blog Post 1</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo libero illum
+                                consequuntur maiores
+                                debitis exercitationem provident laboriosam quia, at labore atque perspiciatis tempora a totam.
+                                Dolorem
+                                minus repellat quisquam distinctio rerum enim deserunt ducimus ipsum dolor cum, at sapienteipsam
+                                neque
+                                dolore quae, tenetur officiis. A saepe nemo repellendus?</p>
+                            <a href="" class="button">Read More</a>
+                        </div>
+                    </div>
+        
+                    <!-- box-2- -->
+                    <div class="blog-box">
+                        <!--img---->
+                        <div class="blog-img">
+                            <img src="https://i.etsystatic.com/20158337/r/il/9d394b/2197316918/il_570xN.2197316918_lcmo.jpg" />
+                        </div>
+        
+                        <div class="blog-text">
+                            <span> 13 sept 2023 / Web Design</span>
+                            <br>
+                            <br>
+                            <h2> Blog Post 2</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo libero illum
+                                consequuntur maiores
+                                debitis exercitationem provident laboriosam quia, at labore atque perspiciatis tempora a totam.
+                                minus repellat quisquam distinctio rerum enim deserunt ducimus ipsum dolor cum, at sapiente
+                                ipsam neque dolore quae, tenetur officiis. A saepe nemo repellendus?</p>
+                            <a href="" class="button">Read More</a>
+                        </div>
+                    </div>
+        
+                    <!-- box-3- -->
+                    <div class="blog-box">
+                        <!--img---->
+                        <div class="blog-img">
+                            <img src="https://m.media-amazon.com/images/I/71xK85Lm0rL._AC_UF1000,1000_QL80_.jpg" />
+                        </div>
+        
+                        <div class="blog-text">
+                            <span> 13 sept 2023 / Web Design</span>
+                            <br>
+                            <br>
+                            <h2> Blog Post 3</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo libero illum
+                                consequuntur maiores debitis exercitationem provident laboriosam quia,
+                                at labore atque perspiciatis tempora a totam. Dolorem minus repellat quisquam distinctio rerum
+                                enim deserunt ducimus ipsum dolor cum, at sapiente
+                                ipsam neque dolore quae, tenetur officiis. A saepe nemo repellendus? </p>
+                            <a href="" class="button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <article>
+                    <h1> Article tag</h1>
+                    <p>Nature is a source of endless wonder and inspiration. It has the power to calm our minds, ignite our
+                        creativity,
+                        and remind us of the beauty that surrounds us. In this blog post, we'll explore the magnificence of
+                        nature
+                        through words and pictures. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+                        architecto necessitatibus
+                        unde laudantium aperiam, facere doloremque error impedit animi nulla? Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                        Voluptatum, molestias similique vel quaerat architecto sequi ea, est vero amet nisi voluptates quis
+                        veritatis fuga quod.
+                        Officia suscipit accusamus ratione eligendi fugit. Molestiae nihil quidem dolorem itaque officia
+                        sapiente et id. Facilis
+                        necessitatibus perferendis ipsum laborum minima aspernatur et eum ipsa!</p> <br>
+                    <br>
+        
+                    <!-- Image -->
+                    <img src="tulip1.jpg" alt="Beautiful landscape" height="300" width="400">
+                    <img src="tulip.jpg" alt="Beautiful landscape" height="300" width="400">
+                    <img src="https://theflowerstudio.pk/wp-content/uploads/2021/02/tulips-800x533.jpg" height="300"
+                        width="400" />
+                    <img src="https://i.pinimg.com/736x/11/95/f9/1195f9a7e5c3dcdda69ed1ee1c4197ef--tulips-flowers-pink-tulips.jpg"
+                        height="300" width="400" />
+        
+                </article> <br>
+                <br>
+        
+                <aside>
+                    <h2> The aside elements</h2>
+                    <br>
+                    <p>Tulip cultivation likely began in Persia (Iran) in the 10th century, and it eventually became a symbol of
+                        the Ottoman Empire. Tulips were introduced to the Western world by Augier Ghislain de Busbecq, the
+                        Viennese ambassador to Turkey, who wrote of seeing the plants in Edirne, Turkey, in 1551 and later sent
+                        some seeds to Austria. The arrival at Antwerp in 1562 of a cargo of tulip bulbs from Constantinople (now
+                        Istanbul) marked the beginning of the horticultural tulip industry in Europe. An early recipient of
+                        these flowers was French botanist Carolus Clusius, who was an avid bulb grower and is often credited
+                        with the spread of other spring bulbs, such as hyacinths and irises, across Europe. In the 1590s he
+                        established a botanic garden at the University of Leiden and cultivated tulips there. In 1596 and again
+                        in 1598, broken tulips (tulips that bloom in streaks or flames of colour) were stolen from Clusius’s
+                        garden, and the genetically variable seeds of those purloined flowers became the foundation for a lively
+                        tulip trade. A speculative frenzy over tulips in the Netherlands in 1633–37 is now known as the Tulip
+                        Mania. The tulip produces two or three thick bluish green leaves that are clustered at the base of the
+                        plant. The usually solitary bell-shaped flowers have three petals and three sepals.</p>
+                </aside>
+        
+                <figure>
+        
+                    <img src="https://mcprod.eroma.com.au/media/catalog/product/t/u/tulip.jpeg?auto=webp&format=pjpg"
+                        height="300" width="20%"  
+                        style="padding: 20px;"  />
+                    <figcaption> Tulip grace</figcaption>
+                </figure>
+            </main>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer>
+                <!-- it is used to define footer in the html section -->
+                <p> Copyright &copy; 2023 My Blog | All rights reserved.<br>
+                    contact me
+                </p>
+        
+                <br />
+                <a href="mailto:someone@gmail.com">simransinha280@gmail.com</a>
+            </footer>
+        </body>
+        
+        </html>

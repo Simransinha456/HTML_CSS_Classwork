@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical website</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .logo a {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .topnav {
+            background-color: rgb(136, 70, 70);
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 5px 10px;
+        }
+
+        .topnav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .topnav h3 {
+            font-size: 16px;
+        }
+
+        .search input {
+            padding: 5px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 400px;
+        }
+
+        .search button {
+            /* border: none; */
+            background: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 15px;
+        }
+
+        p {
+            padding: 0 15px;
+            margin-top: 5px;
+        }
+
+        main {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        audio {
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        article div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        article div img {
+            width: 200px;
+            height: 150px;
+            border: 1px solid rgb(63, 62, 62);
+            border-radius: 10px;
+            box-shadow: 4px 7px 7px 0px rgb(122, 121, 121);
+            cursor: pointer;
+            margin: 18px;
+            transition: 400ms;
+            background-size: cover;
+        }
+
+        article div img hover {
+            filter: grayscale(1);
+            transform: scale(1.03);
+
+        }
+
+        select {
+            width: 25%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: rgb(136, 70, 70);
+            color: #f6f4f4;
+            padding: 6px 0;
+            text-align: center;
+        }
+
+        footer h5 {
+            margin-bottom: -20px;
+            font-size: 14px;
+        }
+
+        .link_lists h3 {
+            margin-bottom: 1px;
+            color: #faf8f8;
+            font-size: 15px;
+        }
+
+        .link_lists a {
+            color: #fdfdfd;
+            text-decoration: none;
+            margin-right: 6px;
+            font-size: 14px;
+        }
+
+        .footer_container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .footer-section h3 {
+            font-size: 15px;
+            margin-bottom: 1px;
+        }
+
+        .footer-section a {
+            align-items: center;
+            text-decoration: none;
+            margin-right: 8px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <a
+                href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/JioSaavn_Logo.svg/1280px-JioSaavn_Logo.svg.png">Music</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <h3>Choose Language </h3>
+        <select name="card_type" placeholder="Search...">
+
+            <option value=""> English</option>
+            <option value="">Hindi</option>
+            <option value="">Punjabi</option>
+            <option value="">Telugu</option>
+            <option value="">Malyalam</option>
+        </select>
+
+
+        <div class="search">
+            <button>Log In</button>
+        </div>
+        <div class="search">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <h1>My Musical Website</h1>
+
+    <main>
+        <audio controls>
+            <source src="music1.mp3" type="audio/mp3">
+        </audio>
+    </main>
+
+    <article>
+        <div>
+            <!-- Image -->
+            <img
+                src="https://i.ytimg.com/vi/UyZaPwtp-mU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGHIgUig1MA8=&rs=AOn4CLBJ5cNe17rCYttYDAUM0jczUXMEpA">
+            <img
+                src="https://media.ipassio.com/media/blog/10-easy-bollywood-hindi-songs-to-sing-for-beginners/blog_icon/easy-hindi-songs-to-sing-for-beginners.webp" />
+            <img
+                src="https://aqhpovgpoo.cloudimg.io/v7/motivmusic.com/wp-content/uploads/music-production-for-wellness-industry-melbourne-byron-bay.jpeg?func=bound&w=800&h=800" />
+            <img
+                src="https://thesingerscorner.com/wp-content/uploads/2018/05/Depositphotos_4496076_original-1024x700.jpg" />
+            <img src="https://a10.gaanacdn.com/gn_img/albums/21GWwR3pkg/GWwAJLvpKp/size_l_1692775642.jpg" />
+
+            <img src="https://i.ytimg.com/vi/4M1YonSAkvk/maxresdefault.jpg">
+            <img src="https://m.timesofindia.com/photo/102985994/size-101552/102985994.jpg" />
+            <img
+                src="https://www.adorama.com/alc/wp-content/uploads/2021/03/musician-recording-song-studio-feature.jpg" />
+            <img src="https://assets.teenvogue.com/photos/64a5ba095699418416716eba/16:9/w_2560%2Cc_limit/1474272248" />
+            <img
+                src="https://i.ytimg.com/vi/UyZaPwtp-mU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGHIgUig1MA8=&rs=AOn4CLBJ5cNe17rCYttYDAUM0jczUXMEpA" />
+        </div>
+    </article>
+
+    <!-- footer section  -->
+    <footer>
+        <h5>Made with &hearts; by blogs </h5>
+        <h6>&copy; 2023 Your Website Name. All rights reserved.</h6>
+        <div class="footer_container container">
+            <div class="link_lists">
+                <h3>Main Links</h3>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Terms and condition </a>
+            </div>
+            <div class="link_lists">
+                <h3>Support</h3>
+                <a href="#">Help Center</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect with Us</h3>
+                <a href="https://www.facebook.com/" style="color: rgb(18, 18, 111);">Facebook</a>
+                <a href="https://twitter.com/" style="color: rgb(7, 53, 77);">Twitter</a>
+                <a href="https://www.instagram.com/" style="color: rgb(71, 6, 17);">Instagram</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

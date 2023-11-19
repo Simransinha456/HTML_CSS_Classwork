@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav1{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: #e2cdd1;
+}
+.s-icon i{
+    font-size: 20px;
+    margin: 0 5px;
+    border-radius: 30px;
+    padding: 10px;
+    background: #df5e78;
+    color: white;
+}
+.logo{
+    text-align: center;
+    font-size: 50px;
+    line-height: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo span{
+    font-size: 20px;
+    color: #df5e78;
+    font-weight: bold;
+}
+.search i{
+    font-size: 30px;
+}
+.nav2{
+    width: 100%;
+    height: 50px;
+    box-shadow: 2px 3px 5px grey;
+    background-color: #a74e4e; 
+}
+.menu{
+    width: 70%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(244, 237, 237);
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.contact{
+    height: 450px;
+    background-color: #f3f2f2;
+    text-align: center; 
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.container h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #0b0b0b;
+}
+
+.contact-form{
+    text-align: left;
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444343;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d7d5d5;
+    color: black;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #a74e4e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #836268;
+}
+
+
+footer {
+    background-color: #222;
+    color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.link_lists h3 {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.link_lists a {
+    color: #b6a4a4;
+    text-decoration: none;
+    margin: 3px 0px;
+    display: block;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: flex;
+    align-items: center;
+    color: #c8bcbc;
+    text-decoration: none;
+    margin: 5px 0px;
+}
+
+
